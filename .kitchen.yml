@@ -18,5 +18,7 @@ platforms:
 suites:
   - name: default
     run_list:
+      - recipe[stig::default]
+      - recipe[wsi_tomcat::default]
       - recipe[cida_psiprobe::default]
     attributes:
